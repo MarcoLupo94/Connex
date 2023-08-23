@@ -29,4 +29,4 @@ I discovered "express-prometheus-middleware" has security issues and was last up
 
 3. In the root folder you can run `npm run dev` to start the server.
 4. To launch the client you can run `npm run start` from the client folder.
-5. Tests suits for the server can be used by `npm run test server/__tests__` while tests for the client can be run by `npm run test` from the client folder.
+5. Tests suits can be run by prompting `npm run test` from the root folder.

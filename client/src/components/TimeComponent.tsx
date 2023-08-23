@@ -8,6 +8,7 @@ const TimeComponent = (props: TimeComponentProps) => {
     <section>
       <div
         style={{
+          width: '200px',
           border: 'solid 1px #dddddd',
           padding: '2em',
           boxShadow: '0 2px 4px 0 rgba(0,0,0,0.2)'

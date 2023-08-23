@@ -24,8 +24,8 @@ function App() {
 
   useEffect(() => {
     loadData();
-    setInterval(loadData, 30000);
-    setInterval(
+    const data = setInterval(loadData, 30000);
+    const calculate = setInterval(
       () =>
         calculateTimeDifference(
           time.current,
@@ -34,6 +34,10 @@ function App() {
         ),
       1000
     );
+    return () => {
+      clearInterval(data);
+      clearInterval(calculate);
+    };
   }, []);
 
   return (
@@ -41,8 +45,8 @@ function App() {
       style={{
         width: '100%',
         display: 'flex',
-        justifyContent: 'space-between',
-        padding: '3em'
+        padding: '3em',
+        gap: '2em'
       }}
     >
       {loadingTime ? (

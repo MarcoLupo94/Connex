@@ -104,6 +104,6 @@
     "client",
     "dist",
     "node_modules",
-   "__tests__"
+   "server/__tests__"
   ]
 }
