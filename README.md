@@ -9,7 +9,6 @@ Used node v19.
 
 Using npm audit I found there were deprecated packages in my dependencies, after investigating further and adding and removing different packages,
 I discovered "express-prometheus-middleware" has security issues and was last updated the 24/4/2021.
-It's suggested enabling a security policy, we can do that here https://github.com/joao-fontenele/express-prometheus-middleware/security "
 
 ## Installation
 
