@@ -15,7 +15,7 @@ I discovered "express-prometheus-middleware" has security issues and was last up
 1. Clone this repo and enter!
 
    ```bash
-   git clone https://github.com/MarcoLupo94/connex-tech-test.git
+   git clone https://github.com/MarcoLupo94/Connex.git
    cd Connex
    ```
 
