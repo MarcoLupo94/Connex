@@ -38,7 +38,7 @@ export const loadTime = async (
 ) => {
   try {
     const res = await fetcher();
-    time.current = res.properties.epoch.description;
+    time.current = res.epoch;
     return res;
   } catch (error) {
     time.current = 'Something went wrong...';

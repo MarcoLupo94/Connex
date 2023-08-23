@@ -2,7 +2,7 @@ import express, { Express } from 'express';
 import cors from 'cors';
 import router from './router';
 import promMid from 'express-prometheus-middleware';
-import { tokenMiddleware } from './middleware';
+import { tokenMiddleware } from './middleware/middleware';
 
 const corsOption = {
   origin: ['http://localhost:3000']

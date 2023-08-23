@@ -1,0 +1,9 @@
+{
+  "properties": {
+    "epoch": {
+      "type": "number"
+    }
+  },
+  "required": ["epoch"],
+  "type": "object"
+}

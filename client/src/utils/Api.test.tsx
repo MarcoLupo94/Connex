@@ -34,14 +34,13 @@ describe('Test loader', () => {
   test('loadTime should set current time with data from fetch', async () => {
     global.fetch = jest.fn(() =>
       Promise.resolve({
-        json: () =>
-          Promise.resolve({ properties: { epoch: { description: 100 } } })
+        json: () => Promise.resolve({ epoch: 100 })
       })
     ) as jest.Mock;
 
     const res = await loadTime(getTime, mockRef);
     expect(mockRef.current).toBe(100);
-    expect(res.properties.epoch.description).toBe(100);
+    expect(res.epoch).toBe(100);
   });
   test('loadTime should return error message', async () => {
     global.fetch = jest.fn(() =>

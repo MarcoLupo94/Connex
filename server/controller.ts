@@ -2,26 +2,12 @@
 import { Request, Response } from 'express';
 
 export interface Data {
-  properties: {
-    epoch: {
-      description: number;
-      type: string;
-    };
-  };
-  required: string[];
-  type: string;
+  epoch: number;
 }
 
 export const getTime = (_req: Request, res: Response) => {
   const response: Data = {
-    properties: {
-      epoch: {
-        description: Date.now(),
-        type: 'number'
-      }
-    },
-    required: ['epoch'],
-    type: 'object'
+    epoch: Date.now()
   };
 
   try {
