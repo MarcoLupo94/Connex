@@ -1,6 +1,6 @@
 import React from 'react';
-import { getMetrics, getTime } from './apiService';
-import { calculateTimeDifference, loadMetrics, loadTime } from './loader';
+import { getTime } from './apiService';
+import { calculateTimeDifference, loadTime } from './loader';
 
 const mockFn = jest.fn();
 const mockFn2 = jest.fn();

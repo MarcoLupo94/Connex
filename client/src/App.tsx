@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { calculateTimeDifference, loadMetrics, loadTime } from './utils/loader';
 import { getMetrics, getTime } from './utils/apiService';
-import './App.css';
 import MetricsComponent from './components/MetricsComponent';
 import TimeComponent from './components/TimeComponent';
 import SpinnerComponent from './components/SpinnerComponent';
@@ -38,7 +37,14 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div
+      style={{
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'space-between',
+        padding: '3em'
+      }}
+    >
       {loadingTime ? (
         <SpinnerComponent />
       ) : (

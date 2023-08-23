@@ -1,4 +1,3 @@
-import '../App.css';
 interface TimeComponentProps {
   time: number | string;
   timeDifference: string;
@@ -6,7 +5,7 @@ interface TimeComponentProps {
 
 const TimeComponent = (props: TimeComponentProps) => {
   return (
-    <section className="time">
+    <section>
       <div
         style={{
           border: 'solid 1px #dddddd',
